@@ -1,0 +1,120 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+p{
+    font-weight: 300;
+}
+
+:root {
+    --primary-color: #42c1b4; 
+    --secondary-color:#0e2737;
+  }
+body{
+    min-height: 100vh;
+}
+
+
+/* Dash Nav */
+.dashbody {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.dashNav {
+	flex-basis: 20%;
+	padding: 30px 20px;
+	background: rgba(0, 0, 0, 0.825);
+}
+.dashNav ul {
+	list-style: none;
+    color: white;
+    margin-top: 30px;
+}
+.dashNav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.dashNav img{
+	width: 100px;
+}
+.dashNav ul li a {
+	padding: 5px 10px;
+    font: 15px;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+.dashNav ul li a:hover,.dashNav ul li a.menu-item.active{
+    background: rgba(0, 0, 0, 0.9);
+}
+.dashNav li:last-child a {
+	color: red !important;
+	font-weight: 500;
+}
+
+
+/* Dash Content */
+.dashContent {
+	width: 80%;
+    background-color: white;
+    padding: 30px 50px;
+}
+.dashContent .welcomeMassage {
+	padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.dashContent .welcomeMassage h1 {
+	font-weight: 500;
+}
+.dashContent .welcomeMassage p span {
+	color: var(--primary-color);
+	font-weight: 400;
+}
+.dashContent .userCon h3,.dashContent .subscriberCon h3,.blogCon h3,.blogDelCon h3,.dashContent h3{
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.dashContent .userCon table,.dashContent .subscriberCon table,.blogDelCon table,.dashContent table  {
+	width: 60%;
+    margin-bottom: 1rem;
+	border-collapse: collapse;
+	text-align: center;
+    color: rgba(0, 0, 0, 0.825);
+}
+.dashContent .userCon table th,.dashContent .userCon table td,.dashContent .subscriberCon table td,.dashContent .subscriberCon table th,.dashContent table td,.dashContent table th{
+    padding: 7px;
+}
+.blogCon form input,.dashContent input {
+	width: 60%;
+	height: 44px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: solid 1px #dfdfdf;
+    padding: 10px 5px;
+}
+.blogCon form textarea,.dashContent textarea {
+	width: 60%;
+	height: 100px;
+	margin-top: 5px;
+	border-radius: 5px;
+	border: solid 1px #dfdfdf;
+    padding: 10px 5px;
+}
+
+
+
+.dashConSection {
+    display: none;
+}
+
+.dashConSection.active {
+    display: block;
+}

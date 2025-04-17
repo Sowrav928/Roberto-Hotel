@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="btnGroup">
+        <button id="clickBtn">Click Me</button>
+        <button id="reset">Reset</button>
+    </div>
+    <h5 id="">Click Clount : <span id="counter">0</span></h5>
+
+
+    <script>
+        let clickCount = 0;
+
+        let clickbutton = document.getElementById('clickBtn');
+        let resetbutton = document.getElementById('reset');
+        let display = document.getElementById('counter');
+
+        function addcount(){
+            clickCount++;
+            display.innerHTML = clickCount;
+        }
+
+        clickbutton.addEventListener('click',addcount);
+        resetbutton.addEventListener('click',()=>{
+            clickCount = 0;
+            display.innerHTML = clickCount;
+        });
+    </script>
+
+</body>
+</html>
